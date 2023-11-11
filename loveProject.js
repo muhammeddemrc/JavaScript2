@@ -2,13 +2,16 @@ var you = prompt("What is your name ?");
 
 var yourlove = prompt("What is your love name ?");
 
-var num = Math.random();
+var loveScore = Math.random();
 
-num = num*100 + 1;
+loveScore = loveScore*100 + 1;
 
-num = Math.floor(num);
+loveScore = Math.floor(loveScore);
     
 
-
-
-console.log(you + " ve "+ yourlove + " aşk oranınınız = " + num);
+if (loveScore > 70 ) {
+    alert("Birbrinize çok aşıksınız :)");
+}
+else {
+    alert("Aşk oranınız %" + loveScore )
+}
